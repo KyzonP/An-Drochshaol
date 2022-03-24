@@ -1,0 +1,200 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Testing/testing.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hour" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 325.0
+margin_top = 245.0
+margin_right = 350.0
+margin_bottom = 259.0
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="minutes" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_top = 21.0
+margin_right = 53.0
+margin_bottom = 31.0
+text = "Minutes"
+
+[node name="seconds" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_top = 41.0
+margin_right = 54.0
+margin_bottom = 49.0
+text = "Seconds"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="day" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 315.0
+margin_top = 277.0
+margin_right = 355.0
+margin_bottom = 291.0
+text = "Day"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="month" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_top = 81.0
+margin_right = 42.0
+margin_bottom = 86.0
+text = "Month"
+
+[node name="year" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 423.0
+margin_top = 277.0
+margin_right = 463.0
+margin_bottom = 291.0
+text = "Year"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="weekday" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 385.0
+margin_top = 245.0
+margin_right = 471.0
+margin_bottom = 276.0
+text = "Wednesday
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="season" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 372.0
+margin_top = 277.0
+margin_right = 417.0
+margin_bottom = 291.0
+text = "Season"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="noon" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 360.0
+margin_top = 245.0
+margin_right = 396.0
+margin_bottom = 259.0
+text = "am"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="minute_interval" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 340.0
+margin_top = 245.0
+margin_right = 423.0
+margin_bottom = 259.0
+text = "10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="food" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 65.0
+margin_top = 253.0
+margin_right = 105.0
+margin_bottom = 267.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="foodCost" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 90.0
+margin_top = 253.0
+margin_right = 130.0
+margin_bottom = 267.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="money" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 65.0
+margin_top = 240.0
+margin_right = 105.0
+margin_bottom = 254.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="moneyCost" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 90.0
+margin_top = 240.0
+margin_right = 130.0
+margin_bottom = 254.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="oatSeed" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 120.0
+margin_top = 247.0
+margin_right = 155.0
+margin_bottom = 278.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="potatoSeed" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 150.0
+margin_top = 247.0
+margin_right = 185.0
+margin_bottom = 278.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="barleySeed" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 180.0
+margin_top = 247.0
+margin_right = 215.0
+margin_bottom = 278.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}

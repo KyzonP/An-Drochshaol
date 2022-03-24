@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_nature_water_deep_light_plop_splash_47567.mp3-a710355383bd107d7a105c53d00f3be3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/zapsplat_nature_water_deep_light_plop_splash_47567.mp3"
+dest_files=[ "res://.import/zapsplat_nature_water_deep_light_plop_splash_47567.mp3-a710355383bd107d7a105c53d00f3be3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

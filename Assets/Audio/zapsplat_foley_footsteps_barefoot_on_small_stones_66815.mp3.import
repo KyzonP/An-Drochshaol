@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_foley_footsteps_barefoot_on_small_stones_66815.mp3-a0cd94b2ef11b31a47d425bd8d903594.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/zapsplat_foley_footsteps_barefoot_on_small_stones_66815.mp3"
+dest_files=[ "res://.import/zapsplat_foley_footsteps_barefoot_on_small_stones_66815.mp3-a0cd94b2ef11b31a47d425bd8d903594.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

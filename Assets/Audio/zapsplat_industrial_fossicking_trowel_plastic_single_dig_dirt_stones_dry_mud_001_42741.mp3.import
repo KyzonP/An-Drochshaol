@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_industrial_fossicking_trowel_plastic_single_dig_dirt_stones_dry_mud_001_42741.mp3-77967dc962feea6d8efa16d6b4063f1b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/zapsplat_industrial_fossicking_trowel_plastic_single_dig_dirt_stones_dry_mud_001_42741.mp3"
+dest_files=[ "res://.import/zapsplat_industrial_fossicking_trowel_plastic_single_dig_dirt_stones_dry_mud_001_42741.mp3-77967dc962feea6d8efa16d6b4063f1b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,297 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Player/farmer_walk_right.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Player/farmer_idle_up.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Player/farmer_idle_down.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Player/farmer_idle_side.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Player/farmer_walk_down.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Player/farmer_walk_up.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Player/farmer_pickup.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Player/farmer_hoe.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Player/farmer_water.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Audio/senbazuru-by-kevin-macleod-from-filmmusic-io.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Audio/transition-one-by-kevin-macleod-from-filmmusic-io.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Audio/zapsplat_foley_footsteps_barefoot_on_small_stones_66815.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Assets/Audio/zapsplat_industrial_fossicking_trowel_plastic_single_dig_dirt_stones_dry_mud_001_42741.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Audio/zapsplat_warfare_knife_blade_dig_stab_fast_x2_into_soil_dirt_ground_70702.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/zapsplat_nature_water_deep_light_plop_splash_47567.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/zapsplat_food_cereal_cornflakes_handful_drop_sprinkle_carpet_002_50178.mp3" type="AudioStream" id=17]
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 7 )
+region = Rect2( 16, 0, 16, 22 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 7 )
+region = Rect2( 32, 0, 16, 22 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 7 )
+region = Rect2( 48, 0, 16, 22 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 10 )
+region = Rect2( 16, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 10 )
+region = Rect2( 32, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 9 )
+region = Rect2( 16, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 9 )
+region = Rect2( 32, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 2 )
+region = Rect2( 14, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 2 )
+region = Rect2( 28, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 2 )
+region = Rect2( 42, 0, 14, 21 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 10 )
+region = Rect2( 16, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 10 )
+region = Rect2( 32, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 8 )
+region = Rect2( 16, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 8 )
+region = Rect2( 32, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 6 )
+region = Rect2( 16, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 6 )
+region = Rect2( 32, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 6 )
+region = Rect2( 48, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 8 )
+region = Rect2( 16, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 8 )
+region = Rect2( 32, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 10 )
+region = Rect2( 16, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 10 )
+region = Rect2( 32, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 9 )
+region = Rect2( 16, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 9 )
+region = Rect2( 32, 0, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 9 )
+region = Rect2( 16, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 9 )
+region = Rect2( 32, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 8 )
+region = Rect2( 16, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 8 )
+region = Rect2( 32, 32, 16, 32 )
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "farmer_idle_side",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "farmer_walk_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ) ],
+"loop": false,
+"name": "farmer_water_side",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 38 ), SubResource( 39 ), SubResource( 40 ) ],
+"loop": false,
+"name": "farmer_hoe_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "farmer_idle_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "farmer_walk_side",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 44 ), SubResource( 45 ), SubResource( 46 ) ],
+"loop": false,
+"name": "farmer_water_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ) ],
+"loop": false,
+"name": "farmer_harvest_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "farmer_walk_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ) ],
+"loop": false,
+"name": "farmer_harvest_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ) ],
+"loop": false,
+"name": "farmer_water_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ) ],
+"loop": false,
+"name": "farmer_hoe_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
+"loop": false,
+"name": "farmer_hoe_side",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "farmer_idle_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": false,
+"name": "farmer_harvest_side",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 7, 3.5 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 9, 3.5 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 0, 12 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 20 )
+animation = "farmer_water_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 7.5 )
+shape = SubResource( 21 )
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="Shape" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2( 0, 7 )
+shape = SubResource( 34 )
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 11 )
+volume_db = -6.0
+autoplay = true
+
+[node name="MusicGameOver" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 12 )
+volume_db = -6.0
+
+[node name="Walking" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
+pitch_scale = 1.15
+
+[node name="Hoe" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 14 )
+
+[node name="Harvest" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 15 )
+
+[node name="Water" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 16 )
+
+[node name="Plant" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 17 )
+pitch_scale = 1.5
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_foley_notepad_page_turn_thin_paper_a4_002_33421.mp3-0e353d54c00953dcd205fc40b095a530.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/zapsplat_foley_notepad_page_turn_thin_paper_a4_002_33421.mp3"
+dest_files=[ "res://.import/zapsplat_foley_notepad_page_turn_thin_paper_a4_002_33421.mp3-0e353d54c00953dcd205fc40b095a530.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

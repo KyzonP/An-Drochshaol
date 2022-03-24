@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/transition-one-by-kevin-macleod-from-filmmusic-io.mp3-9d20d967d063933ecb01d680a63ab588.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/transition-one-by-kevin-macleod-from-filmmusic-io.mp3"
+dest_files=[ "res://.import/transition-one-by-kevin-macleod-from-filmmusic-io.mp3-9d20d967d063933ecb01d680a63ab588.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

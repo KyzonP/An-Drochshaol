@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_food_cereal_cornflakes_handful_drop_sprinkle_carpet_002_50178.mp3-4b445032db6f6c02160671b358440f53.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/zapsplat_food_cereal_cornflakes_handful_drop_sprinkle_carpet_002_50178.mp3"
+dest_files=[ "res://.import/zapsplat_food_cereal_cornflakes_handful_drop_sprinkle_carpet_002_50178.mp3-4b445032db6f6c02160671b358440f53.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

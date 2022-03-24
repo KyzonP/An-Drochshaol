@@ -1,0 +1,160 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://EventManager/EventManager.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Info/newspapertemplate.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Info/letterTemplate.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Info/CloseButton.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Info/letterRent.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Info/letterday1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Info/letterLandRight.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Info/letterLandLeft.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Audio/zapsplat_foley_notepad_page_turn_thin_paper_a4_002_33421.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Info/newspaper1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Info/newspaper2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Info/newspaper3.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Info/newspaper4.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Info/newspaper7.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Info/newspaper8.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Info/newspaper5.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Info/newspaper6.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Info/newspaper9.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Info/newspaper10.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Info/letterday2.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Info/letterFoodStolen.png" type="Texture" id=21]
+
+[node name="EventManager" type="Control"]
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.780392 )
+margin_left = 239.0
+margin_top = 235.0
+margin_right = 270.0
+margin_bottom = 264.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paper" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+
+[node name="letterTemplate" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 3 )
+
+[node name="newspaperTemplate" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 2 )
+
+[node name="letterRent" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 4
+texture = ExtResource( 5 )
+
+[node name="CloseButtonImage" type="Sprite" parent="."]
+visible = false
+position = Vector2( 254, 250 )
+z_index = 6
+texture = ExtResource( 4 )
+
+[node name="letterDay1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 6 )
+
+[node name="letterDay2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 20 )
+
+[node name="letterFoodStolen" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 21 )
+
+[node name="letterLandLeft" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 8 )
+
+[node name="letterLandRight" type="Sprite" parent="."]
+visible = false
+position = Vector2( 264, 130 )
+z_index = 6
+texture = ExtResource( 7 )
+
+[node name="newspaper1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 10 )
+
+[node name="newspaper2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 11 )
+
+[node name="newspaper3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 12 )
+
+[node name="newspaper4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 13 )
+
+[node name="newspaper5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 16 )
+
+[node name="newspaper6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 17 )
+
+[node name="newspaper7" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 14 )
+
+[node name="newspaper8" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 124 )
+z_index = 6
+texture = ExtResource( 15 )
+
+[node name="newspaper9" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 142 )
+z_index = 6
+texture = ExtResource( 18 )
+
+[node name="newspaper10" type="Sprite" parent="."]
+visible = false
+position = Vector2( 252, 142 )
+z_index = 6
+texture = ExtResource( 19 )
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_CloseButton_pressed"]
